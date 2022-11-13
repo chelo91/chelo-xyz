@@ -3,7 +3,6 @@ title: "SCP"
 date: "2022-10-07"
 author: "Chelo"
 description: "Manual del comando de la terminal"
-slug: scp
 tags: [
 ]
 ---

@@ -3,7 +3,6 @@ title: PM2
 date: "2022-10-07"
 author: "Chelo"
 description: "Paquete de Node para levantar un proyecto"
-slug: pm2
 tags: [
 ]
 ---
