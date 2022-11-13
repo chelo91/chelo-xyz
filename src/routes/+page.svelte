@@ -28,7 +28,7 @@
       Design y mucho más.
     </p>
     <p>
-      Me encanta emprender e inovar con soluciones y tecnologías nuevas siendo
+      Me encanta emprender e innovar con soluciones y tecnologías nuevas siendo
       autodidacta.
     </p>
   </div>
