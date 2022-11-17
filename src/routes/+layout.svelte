@@ -5,6 +5,7 @@
     { name: "Sobre mi", url: "/" },
     { name: "Docs", url: "/docs" },
     { name: "Blog", url: "/posts" },
+    { name: "Proyectos", url: "/projects" },
   ];
 
   $: currentPage = $page.url.pathname;
@@ -67,6 +68,11 @@
     </div>
   </header>
   <section>
+    {#each menus as { url, name }}
+      {#if url !== "/" ? currentPage.match(url) : url === currentPage}
+        <h1>{name}</h1>
+      {/if}
+    {/each}
     <slot />
   </section>
 </div>
@@ -87,5 +93,8 @@
   }
   .nav-link {
     font-size: 20px;
+  }
+  h1 {
+    text-align: center;
   }
 </style>
