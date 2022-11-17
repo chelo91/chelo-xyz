@@ -12,12 +12,12 @@
       url: "https://cafe.chelo.xyz/",
       tags: ["html"],
     },
-    {
+    /*{
       title: "Profile",
       description: "",
       url: "https://chelo.xyz/",
       tags: ["svelte"],
-    },
+    },*/
     {
       title: "Penca Mundial",
       description: "",

@@ -11,6 +11,10 @@
   $: currentPage = $page.url.pathname;
 </script>
 
+<svelte:head>
+  <title>Chelo.xyz - Marcelo Aguirre</title>
+</svelte:head>
+
 <div class="container">
   <header class="p-3">
     <div class="d-flex flex-wrap align-items-center justify-content-center">
