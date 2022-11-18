@@ -40,19 +40,19 @@
       </ul>
 
       <div class="col-md-4 text-end">
-        <a href="https://github.com/chelo91" role="button" class="m-1"
+        <a href="https://github.com/chelo91" role="button" class="m-1" target="_blank"
           ><i
             class="fab
         fa-github fa-xl"
           />
         </a>
-        <a href="https://www.instagram.com/soych3lo/" role="button" class="m-1"
+        <a href="https://www.instagram.com/soych3lo/" role="button" class="m-1" target="_blank"
           ><i
             class="fab
         fa-instagram fa-xl"
           />
         </a>
-        <a href="https://t.me/soych3lo" role="button" class="m-1"
+        <a href="https://t.me/soych3lo" role="button" class="m-1" target="_blank"
           ><i
             class="fab
         fa-telegram fa-xl"
@@ -62,10 +62,11 @@
           href="https://www.linkedin.com/in/marcelo-aguirre-4b01a6184/"
           role="button"
           class="m-1"
+          target="_blank"
           ><i class="fab fa-linkedin fa-xl" />
         </a>
 
-        <a href="mailto:me@chelo.xyz" role="button" class="m-1">
+        <a href="mailto:me@chelo.xyz" role="button" class="m-1" target="_blank">
           <i class="far fa-envelope fa-xl" />
         </a>
       </div>

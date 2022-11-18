@@ -4,7 +4,7 @@
       title: "Seleccionador de Menus",
       description: "",
       url: "https://menu.chelo.xyz/",
-      tags: ["svelte", "node"],
+      tags: ["svelte"],
     },
     {
       title: "Work Cafe",
