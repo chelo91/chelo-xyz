@@ -9,7 +9,7 @@ export const fetchMarkdownDocs = async () => {
 const fetchMarkdownFiles = async (url) => {
   let allMdFiles;
   switch (url) {
-    case "docs": allMdFiles = import.meta.glob("/src/routes/docs/md/*.md");
+    case "docs": allMdFiles = import.meta.glob("/src/md/docs/*.md");
       break;
     //case "posts": allMdFiles = import.meta.glob("/src/routes/posts/md/*.md");
     //  break;
@@ -20,9 +20,7 @@ const fetchMarkdownFiles = async (url) => {
   const allMd = await Promise.all(
     iterableMdFiles.map(async ([path, resolver]) => {
       const { metadata } = await resolver()
-      let auxPath = path.slice(11, -3)
-      const postPath = auxPath.replace("/md/", "/");
-
+      const postPath = path.slice(8, -3)
       return {
         meta: metadata,
         path: postPath,

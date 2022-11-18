@@ -1,6 +1,7 @@
 <script>
   import Card from "$lib/Components/Card.svelte";
   import CardContainer from "$lib/Components/CardContainer.svelte";
+  import SpanTags from "$lib/Components/SpanTags.svelte";
 
   const projects = [
     {
@@ -28,20 +29,6 @@
       tags: ["svelte"],
     },
   ];
-  const tags = [
-    {
-      tag: "svelte",
-      class: "bg-warning",
-    },
-    {
-      tag: "node",
-      class: "bg-success",
-    },
-    {
-      tag: "html",
-      class: "bg-info",
-    },
-  ];
 </script>
 
 <div class="center">
@@ -53,10 +40,7 @@
           <slot slot="description">{project.description}</slot>
           <slot slot="small">
             {#each project.tags as tag}
-              <span
-                class="badge {tags.find((tagColor) => tagColor.tag === tag)
-                  ?.class}">{tag}</span
-              >
+              <SpanTags data={tag} />
             {/each}
           </slot>
         </Card>
