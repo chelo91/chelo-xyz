@@ -1,4 +1,7 @@
 <script>
+  import Card from "$lib/Components/Card.svelte";
+  import CardContainer from "$lib/Components/CardContainer.svelte";
+
   const projects = [
     {
       title: "Seleccionador de Menus",
@@ -39,53 +42,31 @@
       class: "bg-info",
     },
   ];
-
-  const inventario = [
-    { nombre: "manzanas", cantidad: 2 },
-    { nombre: "bananas", cantidad: 0 },
-    { nombre: "cerezas", cantidad: 5 },
-  ];
-
-  const resultado = tags.find((tag) => tag.tag === tag);
-
-  console.log(resultado); // { nombre: 'cerezas', cantidad: 5 }
 </script>
 
 <div class="center">
-  <ol class="list-group list-group-numbered col-12 col-md-10 col-lg-7">
-    {#each projects as project}
-      <!-- svelte-ignore security-anchor-rel-noreferrer -->
-      <a href={project.url} aria-current="true" target="_blank">
-        <li
-          class="list-group-item d-flex align-items-start"
-        >
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">{project.title}</div>
-            <p class="mb-1">{project.description}</p>
-          </div>
-          {#each project.tags as tag}
-            <span
-              class="badge {tags.find((tagColor) => tagColor.tag === tag)
-                ?.class}">{tag}</span
-            >
-          {/each}
-        </li>
-      </a>
-    {/each}
-  </ol>
+  <div class="col-12 col-lg-9">
+    <CardContainer>
+      {#each projects as project}
+        <Card url={project.url} target={"_blank"}>
+          <slot slot="name">{project.title}</slot>
+          <slot slot="description">{project.description}</slot>
+          <slot slot="small">
+            {#each project.tags as tag}
+              <span
+                class="badge {tags.find((tagColor) => tagColor.tag === tag)
+                  ?.class}">{tag}</span
+              >
+            {/each}
+          </slot>
+        </Card>
+      {/each}
+    </CardContainer>
+  </div>
 </div>
 
 <style>
   .center {
     text-align: -webkit-center;
-  }
-  a {
-    text-decoration: none;
-  }
-  span {
-    margin: 2px;
-  }
-  p{
-    text-align-last: left;
   }
 </style>

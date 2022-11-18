@@ -1,21 +1,15 @@
 <script>
+  import Card from "$lib/Components/Card.svelte";
+  import CardContainer from "$lib/Components/CardContainer.svelte";
   export let data;
 </script>
 
-{#each data.docs as doc}
-  <a
-    href=".{doc.path}"
-    class="list-group-item list-group-item-action d-flex gap-3 py-3"
-    aria-current="true"
-  >
-    <div class="d-flex gap-2 w-100 justify-content-between">
-      <div>
-        <h6 class="mb-0">{doc.meta.title}</h6>
-        <p class="mb-0 opacity-75">
-          {doc.meta.description}
-        </p>
-      </div>
-      <small class="opacity-50 text-nowrap">{doc.meta.date}</small>
-    </div>
-  </a>
-{/each}
+<CardContainer>
+  {#each data.docs as doc}
+    <Card url={doc.path} target={""}>
+      <slot slot="name">{doc.meta.title}</slot>
+      <slot slot="description">{doc.meta.description}</slot>
+      <slot slot="small">{doc.meta.date}</slot>
+    </Card>
+  {/each}
+</CardContainer>

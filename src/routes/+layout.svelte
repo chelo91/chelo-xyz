@@ -4,7 +4,7 @@
   const menus = [
     { name: "Sobre mi", url: "/" },
     { name: "Docs", url: "/docs" },
-    { name: "Blog", url: "/posts" },
+    /*{ name: "Blog", url: "/posts" },*/
     { name: "Proyectos", url: "/projects" },
   ];
 
