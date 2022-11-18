@@ -1,5 +1,5 @@
 <script>
-  import SpanTags from "$lib/Components/SpanTags.svelte";
+  import SpanTags from "$lib/components/SpanTags.svelte";
   export let data;
 </script>
 

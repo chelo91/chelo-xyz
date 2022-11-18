@@ -1,7 +1,7 @@
 <script>
-  import Card from "$lib/Components/Card.svelte";
-  import CardContainer from "$lib/Components/CardContainer.svelte";
-  import SpanTags from "$lib/Components/SpanTags.svelte";
+  import Card from "$lib/components/Card.svelte";
+  import CardContainer from "$lib/components/CardContainer.svelte";
+  import SpanTags from "$lib/components/SpanTags.svelte";
 
   const projects = [
     {
