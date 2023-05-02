@@ -3,9 +3,9 @@
 
   const menus = [
     { name: "Sobre mi", url: "/" },
-    { name: "Docs", url: "/docs" },
-    /*{ name: "Blog", url: "/posts" },*/
-    { name: "Proyectos", url: "/projects" },
+    /*{ name: "Docs", url: "/docs" },
+    /*{ name: "Blog", url: "/posts" },
+    { name: "Proyectos", url: "/projects" },*/
   ];
 
   $: currentPage = $page.url.pathname;
@@ -23,7 +23,7 @@
         class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none"
         ><h3>Chelo.xyz</h3>
       </a>
-
+      <!--
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         {#each menus as { url, name }}
           <li>
@@ -37,22 +37,34 @@
             >
           </li>
         {/each}
-      </ul>
+      </ul>-->
 
       <div class="col-md-4 text-end">
-        <a href="https://github.com/chelo91" role="button" class="m-1" target="_blank"
+        <a
+          href="https://github.com/chelo91"
+          role="button"
+          class="m-1"
+          target="_blank"
           ><i
             class="fab
         fa-github fa-xl"
           />
         </a>
-        <a href="https://www.instagram.com/soych3lo/" role="button" class="m-1" target="_blank"
+        <a
+          href="https://www.instagram.com/soych3lo/"
+          role="button"
+          class="m-1"
+          target="_blank"
           ><i
             class="fab
         fa-instagram fa-xl"
           />
         </a>
-        <a href="https://t.me/soych3lo" role="button" class="m-1" target="_blank"
+        <a
+          href="https://t.me/soych3lo"
+          role="button"
+          class="m-1"
+          target="_blank"
           ><i
             class="fab
         fa-telegram fa-xl"
