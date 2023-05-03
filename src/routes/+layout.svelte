@@ -23,6 +23,8 @@
         class="d-flex align-items-center col-md-3 text-decoration-none"
         ><h3>Chelo.xyz</h3>
       </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      </ul>
       <!--
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         {#each menus as { url, name }}
@@ -37,7 +39,7 @@
             >
           </li>
         {/each}
-      </ul>-->
+     -->
 
       <div class="col-md-4 text-end">
         <a
@@ -48,26 +50,6 @@
           ><i
             class="fab
         fa-github fa-xl"
-          />
-        </a>
-        <a
-          href="https://www.instagram.com/soych3lo/"
-          role="button"
-          class="m-1"
-          target="_blank"
-          ><i
-            class="fab
-        fa-instagram fa-xl"
-          />
-        </a>
-        <a
-          href="https://t.me/soych3lo"
-          role="button"
-          class="m-1"
-          target="_blank"
-          ><i
-            class="fab
-        fa-telegram fa-xl"
           />
         </a>
         <a
