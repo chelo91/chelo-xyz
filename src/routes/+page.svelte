@@ -1,3 +1,7 @@
+<script>
+  import { t } from "$lib/i18n.config";
+</script>
+
 <div class="inner cover">
   <div class="row">
     <div id="colPho" class="text-center col">
@@ -12,7 +16,7 @@
   <div class="row">
     <div id="colNam" class="text-center col">
       <h3>Marcelo Aguirre</h3>
-      <h4>Web Developer</h4>
+      <h4>{$t("job")}</h4>
       <h6>
         <i class="fas fa-map-marker-alt" />
         Montevideo, Uruguay
@@ -20,16 +24,12 @@
     </div>
   </div>
   <div id="row-desc" class="row">
-    <h3>Sobre mi</h3>
+    <h3>{$t("about")}</h3>
     <p>
-      Soy desarrollador web full-stack de Uruguay, actualmente estoy trabajando
-      para diversos proyectos de Latam. Especializado en tecnologías y lenguajes
-      como PHP, Node JS, HTML5, CSS3, Javascript, JQuery, Bootstrap, Responsive
-      Design y mucho más.
+      {$t("desc_1")}
     </p>
     <p>
-      Me encanta emprender e innovar con soluciones y tecnologías nuevas siendo
-      autodidacta.
+      {$t("desc_2")}
     </p>
   </div>
 </div>

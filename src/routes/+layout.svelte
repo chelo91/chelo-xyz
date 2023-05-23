@@ -9,6 +9,12 @@
   ];
 
   $: currentPage = $page.url.pathname;
+
+  import { t, locale, loadTranslations } from "$lib/i18n.config";
+
+  function changeLocale(newLocale) {
+    loadTranslations(newLocale);
+  }
 </script>
 
 <svelte:head>
@@ -23,24 +29,16 @@
         class="d-flex align-items-center col-md-3 text-decoration-none"
         ><h3>Chelo.xyz</h3>
       </a>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      </ul>
-      <!--
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        {#each menus as { url, name }}
-          <li>
-            <a
-              data-sveltekit-prefetch
-              class="nav-link px-2"
-              class:link-secondary={url !== "/"
-                ? currentPage.match(url)
-                : url === currentPage}
-              href={url}>{name}</a
-            >
-          </li>
-        {/each}
-     -->
-
+      <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <select
+          class="form-select"
+          bind:value={$locale}
+          on:change={() => changeLocale($locale)}
+        >
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </div>
       <div class="col-md-4 text-end">
         <a
           href="https://github.com/chelo91"
