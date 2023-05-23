@@ -25,12 +25,7 @@
   </div>
   <div id="row-desc" class="row">
     <h3>{$t("about")}</h3>
-    <p>
-      {$t("desc_1")}
-    </p>
-    <p>
-      {$t("desc_2")}
-    </p>
+    {@html $t("desc")}
   </div>
 </div>
 
