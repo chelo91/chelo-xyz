@@ -2,10 +2,10 @@
   import { page } from "$app/stores";
 
   const menus = [
-    { name: "Sobre mi", url: "/" },
+    { name: "aboutMe", url: "/" },
     /*{ name: "Docs", url: "/docs" },
-    /*{ name: "Blog", url: "/posts" },
-    { name: "Proyectos", url: "/projects" },*/
+    /*{ name: "Blog", url: "/posts" },*/
+    { name: "proyects", url: "/projects" },
   ];
 
   $: currentPage = $page.url.pathname;
@@ -29,16 +29,18 @@
         class="d-flex align-items-center col-md-3 text-decoration-none"
         ><h3>Chelo.xyz</h3>
       </a>
-      <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <select
-          class="form-select"
-          bind:value={$locale}
-          on:change={() => changeLocale($locale)}
-        >
-          <option value="es">Español</option>
-          <option value="en">English</option>
-        </select>
-      </div>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        {#each menus as { url, name }}
+          <li>
+            <a
+              data-sveltekit-prefetch
+              class="nav-link px-2"
+              class:link-secondary={url !== currentPage}
+              href={url}>{$t(name)}</a
+            >
+          </li>
+        {/each}
+      </ul>
       <div class="col-md-4 text-end">
         <a
           href="https://github.com/chelo91"
@@ -62,12 +64,23 @@
           <i class="far fa-envelope fa-xl" />
         </a>
       </div>
+      <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <select
+          id="locale"
+          class="form-select"
+          bind:value={$locale}
+          on:change={() => changeLocale($locale)}
+        >
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
     </div>
   </header>
   <section>
     {#each menus as { url, name }}
       {#if url !== "/" ? currentPage.match(url) : url === currentPage}
-        <h1>{name}</h1>
+        <h1>{$t(name)}</h1>
       {/if}
     {/each}
     <slot />
@@ -93,5 +106,9 @@
   }
   h1 {
     text-align: center;
+  }
+  #locale {
+    margin: 3px;
+    max-width: 150px;
   }
 </style>
