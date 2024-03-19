@@ -35,9 +35,7 @@
             <a
               data-sveltekit-prefetch
               class="nav-link px-2"
-              class:link-secondary={url !== "/"
-                ? currentPage.match(url)
-                : url === currentPage}
+              class:link-secondary={url !== currentPage}
               href={url}>{name}</a
             >
           </li>
