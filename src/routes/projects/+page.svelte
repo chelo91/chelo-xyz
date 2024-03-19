@@ -10,10 +10,8 @@
     <div slot="name">Chelo.xyz</div>
     <div slot="description">Web personal</div>
     <div slot="small">
-      <SpanTags data="Svelte" />
       <SpanTags data="Svelte-kit" />
       <SpanTags data="Node.js" />
-      <SpanTags data="Vercel" />
     </div>
   </Card>
   <Card url="https://carpincho.dev">
@@ -22,7 +20,6 @@
     <div slot="small">
       <SpanTags data="Astro" />
       <SpanTags data="Node.js" />
-      <SpanTags data="Vercel" />
     </div>
   </Card>
   <Card url="https://nibiru.com.uy">
@@ -39,8 +36,6 @@
       <SpanTags data="PHP" />
       <SpanTags data="Node.js" />
       <SpanTags data="Wordpress" />
-      <SpanTags data="Linux" />
-      <SpanTags data="Docker" />
     </div>
   </Card>
   <Card>
@@ -61,7 +56,13 @@
     <div slot="description">Proyecto de practica de React</div>
     <div slot="small">
       <SpanTags data="React" />
-      <SpanTags data="Vercel" />
+    </div>
+  </Card>
+  <Card url="https://ch-tareas-production.up.railway.app">
+    <div slot="name">eCommerce ExpressJS</div>
+    <div slot="description">Proyecto de eCommerce de CoderHouse</div>
+    <div slot="small">
+      <SpanTags data="Node.js" />
     </div>
   </Card>
 </CardContainer>

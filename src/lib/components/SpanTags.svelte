@@ -2,16 +2,28 @@
   export let data = "";
   const tags = [
     {
-      tag: "svelte",
+      tag: "Svelte-kit",
       color: "bg-warning",
     },
     {
-      tag: "node",
+      tag: "Node.js",
       color: "bg-success",
     },
     {
-      tag: "html",
+      tag: "PHP",
+      color: "bg-primary",
+    },
+    {
+      tag: "Astro",
+      color: "bg-dark",
+    },
+    {
+      tag: "Wordpress",
       color: "bg-info",
+    },
+    {
+      tag: "React",
+      color: "bg-danger",
     },
   ];
 </script>
