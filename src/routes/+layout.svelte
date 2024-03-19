@@ -2,10 +2,10 @@
   import { page } from "$app/stores";
 
   const menus = [
-    { name: "Sobre mi", url: "/" },
+    { name: "aboutMe", url: "/" },
     /*{ name: "Docs", url: "/docs" },
     /*{ name: "Blog", url: "/posts" },*/
-    { name: "Proyectos", url: "/projects" },
+    { name: "proyects", url: "/projects" },
   ];
 
   $: currentPage = $page.url.pathname;
@@ -36,7 +36,7 @@
               data-sveltekit-prefetch
               class="nav-link px-2"
               class:link-secondary={url !== currentPage}
-              href={url}>{name}</a
+              href={url}>{$t(name)}</a
             >
           </li>
         {/each}
@@ -66,12 +66,13 @@
       </div>
       <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <select
+          id="locale"
           class="form-select"
           bind:value={$locale}
           on:change={() => changeLocale($locale)}
         >
-          <option value="es">Español</option>
-          <option value="en">English</option>
+          <option value="es">ES</option>
+          <option value="en">EN</option>
         </select>
       </div>
     </div>
@@ -79,7 +80,7 @@
   <section>
     {#each menus as { url, name }}
       {#if url !== "/" ? currentPage.match(url) : url === currentPage}
-        <h1>{name}</h1>
+        <h1>{$t(name)}</h1>
       {/if}
     {/each}
     <slot />
@@ -105,5 +106,9 @@
   }
   h1 {
     text-align: center;
+  }
+  #locale {
+    margin: 3px;
+    max-width: 150px;
   }
 </style>

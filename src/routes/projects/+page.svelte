@@ -7,31 +7,24 @@
 
 <CardContainer>
   <Card url="https://chelo.xyz">
-    <div slot="name">Chelo.xyz</div>
-    <div slot="description">Web personal</div>
+    <div slot="name">{@html $t("proPersonalName")}</div>
+    <div slot="description">{@html $t("proPersonalDesc")}</div>
     <div slot="small">
       <SpanTags data="Svelte-kit" />
       <SpanTags data="Node.js" />
     </div>
   </Card>
   <Card url="https://carpincho.dev">
-    <div slot="name">Carpinchodev</div>
-    <div slot="description">Blog de programacion</div>
+    <div slot="name">{@html $t("proBlogName")}</div>
+    <div slot="description">{$t("proBlogDesc")}</div>
     <div slot="small">
       <SpanTags data="Astro" />
       <SpanTags data="Node.js" />
     </div>
   </Card>
   <Card url="https://nibiru.com.uy">
-    <div slot="name">Nibiru Service</div>
-    <div slot="description">
-      Sistema de importacion de productos para Woocommerce, consta de varias
-      partes: <br />
-      - Importar productos de APIs externas <br />
-      - Brindar una API para que el plugin de Wordpress pueda importar los productos
-      <br />
-      - Plugin de Wordpress para importar los productos <br />
-    </div>
+    <div slot="name">{@html $t("proNibiruName")}</div>
+    <div slot="description">{@html $t("proNibiruDesc")}</div>
     <div slot="small">
       <SpanTags data="PHP" />
       <SpanTags data="Node.js" />
@@ -39,28 +32,30 @@
     </div>
   </Card>
   <Card>
-    <div slot="name">Sistema de Reservas Medica</div>
-    <div slot="description">Personal website</div>
+    <div slot="name">{@html $t("proMedicName")}</div>
+    <div slot="description">{@html $t("proMedicDesc")}</div>
     <div slot="small">
       <SpanTags data="PHP" />
       <SpanTags data="Wordpress" />
     </div>
   </Card>
-  <!--<Card url="Chelo.xyz">
-    <div slot="name">Work Cafe</div>
-    <div slot="description">Personal website</div>
-    <div slot="small"><SpanTags data="svelte" />2021</div>
-  </Card>-->
   <Card url="https://todo-next-bice.vercel.app">
-    <div slot="name">Todo React</div>
-    <div slot="description">Proyecto de practica de React</div>
+    <div slot="name">{@html $t("proTodoName")}</div>
+    <div slot="description">{@html $t("proTodoDesc")}</div>
     <div slot="small">
       <SpanTags data="React" />
     </div>
   </Card>
+  <Card>
+    <div slot="name">{@html $t("proMidCfName")}</div>
+    <div slot="description">{@html $t("proMidCfDesc")}</div>
+    <div slot="small">
+      <SpanTags data="Node.js" />
+    </div>
+  </Card>
   <Card url="https://ch-tareas-production.up.railway.app">
-    <div slot="name">eCommerce ExpressJS</div>
-    <div slot="description">Proyecto de eCommerce de CoderHouse</div>
+    <div slot="name">{@html $t("proChName")}</div>
+    <div slot="description">{@html $t("proChDesc")}</div>
     <div slot="small">
       <SpanTags data="Node.js" />
     </div>
