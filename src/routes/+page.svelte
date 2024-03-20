@@ -17,10 +17,6 @@
     <div id="colNam" class="text-center col">
       <h3>Marcelo Aguirre</h3>
       <h4>{$t("job")}</h4>
-      <h6>
-        <i class="fas fa-map-marker-alt" />
-        Montevideo, Uruguay
-      </h6>
     </div>
   </div>
   <div id="row-desc" class="row">
