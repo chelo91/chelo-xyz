@@ -1,6 +1,10 @@
 <script>
   import { page } from "$app/stores";
 
+  import { dev } from "$app/environment";
+  import { inject } from "@vercel/analytics";
+  inject({ mode: dev ? "development" : "production" });
+
   const menus = [
     { name: "aboutMe", url: "/" },
     /*{ name: "Docs", url: "/docs" },
