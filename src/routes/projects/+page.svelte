@@ -39,23 +39,16 @@
       <SpanTags data="Wordpress" />
     </div>
   </Card>
-  <Card url="https://todo-next-bice.vercel.app">
+  <Card url="https://todo.carpincho.dev">
     <div slot="name">{@html $t("proTodoName")}</div>
     <div slot="description">{@html $t("proTodoDesc")}</div>
     <div slot="small">
       <SpanTags data="React" />
     </div>
   </Card>
-  <Card>
+  <Card url="https://github.com/chelo91/api-utils">
     <div slot="name">{@html $t("proMidCfName")}</div>
     <div slot="description">{@html $t("proMidCfDesc")}</div>
-    <div slot="small">
-      <SpanTags data="Node.js" />
-    </div>
-  </Card>
-  <Card url="https://ch-tareas-production.up.railway.app">
-    <div slot="name">{@html $t("proChName")}</div>
-    <div slot="description">{@html $t("proChDesc")}</div>
     <div slot="small">
       <SpanTags data="Node.js" />
     </div>
