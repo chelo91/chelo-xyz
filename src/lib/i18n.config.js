@@ -23,8 +23,6 @@ export const config = {
       proTodoDesc: 'Un simple todo list hecho con React, para practicar y aprender sobre el framework',
       proMidCfName: 'Middleware para CloudFlare Images',
       proMidCfDesc: 'Middleware para poder usar las imagenes de CloudFlare en un servidor propio, sin tener que usar el servicio de CloudFlare para servir las imagenes',
-      proChName: 'eCommerce ExpressJS',
-      proChDesc: 'Proyecto de eCommerce de CoderHouse, con ExpressJS y MongoDB',
     },
     en: {
       job: 'Fullstack Developer',
@@ -44,9 +42,6 @@ export const config = {
       proTodoDesc: 'A simple todo list made with React, for practicing and learning about the framework',
       proMidCfName: 'Middleware for CloudFlare Images',
       proMidCfDesc: "Middleware to be able to use CloudFlare images on a self-hosted server, without having to use CloudFlare's service to serve the images",
-      proChName: 'eCommerce ExpressJS',
-      proChDesc: 'CoderHouse eCommerce project, with ExpressJS and MongoDB',
-      
     },
   },
 }

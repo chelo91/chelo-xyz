@@ -6,7 +6,7 @@
 </script>
 
 <CardContainer>
-  <Card url="https://chelo.xyz">
+  <Card url="https://github.com/chelo91/chelo-xyz">
     <div slot="name">{@html $t("proPersonalName")}</div>
     <div slot="description">{@html $t("proPersonalDesc")}</div>
     <div slot="small">
@@ -14,7 +14,7 @@
       <SpanTags data="Node.js" />
     </div>
   </Card>
-  <Card url="https://carpincho.dev">
+  <Card url="https://github.com/chelo91/carpincho-dev">
     <div slot="name">{@html $t("proBlogName")}</div>
     <div slot="description">{$t("proBlogDesc")}</div>
     <div slot="small">
